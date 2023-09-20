@@ -25,7 +25,7 @@ namespace frontend
       public async Task<PizzaInfo[]> GetPizzasAsync()
       {
          try {
-            var responseMessage = await this.client.GetAsync("/pizzainfo");
+            var responseMessage = await this.client.GetAsync("http://localhost:8080/pizzainfo");
             
             if(responseMessage!=null)
             {
